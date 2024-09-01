@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cecilia Jiang's Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Cecilia Jiang's Weather App</h1>
+  <p>Using OpenWeatherMap's API</p>
+  <form id="weatherForm">
+    <input type="text" id="cityInput" placeholder="Enter city" required>
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <div id="weatherResult"></div>
+  <script src="app.js"></script>
+
+  <button class="info-button" onclick="toggleInfo()">About Product Manager Accelerator</button>
+  <div class="info-text" id="infoText">
+    The Product Manager Accelerator Program is designed to support PM professionals through every stage of their career. From students looking for entry-level jobs to Directors looking to take on a leadership role, <br>
+    our program has helped over hundreds of students fulfill their career aspirations. <br> <br>
+    Our Product Manager Accelerator community are ambitious and committed. Through our program they have learnt, honed and developed new PM and leadership skills, giving them a strong foundation for their future endeavours.
+    <br><br>
+    Learn product management for free today on our YouTube channel <a href="https://www.youtube.com/c/drnancyli?sub_confirmation=1">https://www.youtube.com/c/drnancyli?sub_confirmation=1</a>
+    
+    <br><br>
+    Interested in PM Accelerator Pro? <br>
+    Step 1️⃣: Attend the Product Masterclass to learn more about the program details, price, different packages, and stay until the end to get FREE  AI Course. 
+    <br><br>
+    Step 2️⃣: Reserve your early bird ticket and submit an application to talk to our Head of Admission
+    <br><br> 
+    Step 3️⃣: Successful applicants join our PMA Pro community to receive customized coaching!
+    Learn how to create a killer product portfolio 2 two weeks that will help you land any PM job( traditional or AI) even if you were laid off or have zero PM experience
+
+  </div>
+
+  <script>
+      function toggleInfo() {
+          var infoText = document.getElementById("infoText");
+          if (infoText.style.display === "none") {
+              infoText.style.display = "block";
+          } else {
+              infoText.style.display = "none";
+          }
+      }
+  </script>
+
+</body>
+</html>
